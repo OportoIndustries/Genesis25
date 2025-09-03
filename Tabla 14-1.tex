@@ -1,81 +1,174 @@
-+\begin{tabular}{lll}
-+\hline
-+Symbol & Name & Where found \\
-+\hline
-+b & Net width of face of narrowest member & Eq.~(14-16) \\
-+C_e & Mesh alignment correction factor & Eq.~(14-35) \\
-+C_f & Surface condition factor & Eq.~(14-38) \\
-+C_H & Hardness-ratio factor & Eq.~(14-18) \\
-+C_ma & Mesh alignment factor & Eq.~(14-34) \\
-+C_mc & Load-distribution factor & Eq.~(14-31) \\
-+C_mf & Face load distribution factor & Eq.~(14-30) \\
-+C_p & Elastic coefficient & Eq.~(14-13) \\
-+C_pf & Pinion proportion factor & Eq.~(14–32) \\
-+C_pm & Pinion proportion modifier & Eq.~(14–33) \\
-+d & Operating pitch diameter of pinion & Ex. (14–1) \\
-+d_P & Pitch diameter of pinion & Eq.~(14–22) \\
-+d_G & Pitch diameter of gear & Eq.~(14–22) \\
-+E & Modulus of elasticity & Eq.~(14–10) \\
-+F & Net face width of narrowest member & Eq.~(14–15) \\
-+f_P & Pinion surface finish & Fig. 14–13
-+H & Power & Fig. 14–17
-+H_B & Brinell hardness & Ex. 14–3
-+H_BG & Brinell hardness of gear  & Sec. 14–12
-+H_BP & Brinell hardness of pinion & Sec. 14–12
-+h_p & Horsepower & Ex. 14–1
-+h_t & Gear-tooth whole depth & Sec. 14–16
-+I & Geometry factor for pitting resistance & Eq.~(14-16) \\
-+J & Geometry factor for bending strength & Eq.~(14-15) \\
-+K & Contact load factor for pitting resistance & Eq.~(6–65) \\
-+K_B & Rim-thickness factor & Eq.~(14–40) \\
-+K_f & Fatigue stress-concentration factor & Eq.~(14–9) \\
-+K_m & Load-distribution factor & Eq.~(14–30) \\
-+K_o & Overload factor & Eq.~(14–15) \\
-+K_R & Reliability factor & Eq.~(14–17) \\
-+K_s & Size factor & Sec. 14–10
-+K_T & Temperature factor & Eq.~(14–17) \\
-+K_v & Dynamic factor & Eq.~(14–27) \\
-+m & Metric module & Eq.~(14–15) \\
-+m_B & Backup ratio & Eq.~(14–39) \\
-+m_G & Gear ratio (never less than 1) \\ & Eq.~(14–22) \\
-+m_N & Load-sharing ratio & Eq.~(14–21) \\
-+N & Number of stress cycles & Fig. 14–14
-+N_G & Number of teeth on gear & Eq.~(14-2) \\
-+N_P & Number of teeth on pinion & Eq.~(14-22) \\
-+n & Speed & Ex. 14-1
-+n_p & Pinion Speed & Ex. 14-4
-+P & Diametral pitch & Eq.~(14-2) \\
-+P_d & Diametral pitch of pinion & Eq.~(14-15) \\
-+p_N & Normal base pitch & Eq.~(14-24) \\
-+p_n & Normal circular pitch & Eq.~(14-24) \\
-+p_x & Axial pitch & Eq.~(14–19) \\
-+Q_v & Transmission accuracy level number & Eq.~(14–29) \\
-+R & Reliability & Eq.~(14–38) \\
-+R_a & Root-mean-squared roughness & Fig. 14–13
-+r_f & Tooth fillet radius & Fig. 14–1
-+r_G & Pitch-circle radius on gear & In standard
-+r_P & Pitch-circle radius on pinion & In standard
-+r_bP & Pinion base-circle radius & Eq.~(14–25) \\
-+r_bG & Gear base-circle radius & Eq.~(14–25) \\
-+S_C & Buckingham surface endurance strength & Ex. 14–3
-+S_c & AGMA surface endurance strength & Eq.~(14–18) \\
-+S_t & AGMA bending strength & Eq.~(14–17) \\
-+S & Bearing span & Fig. 14–10
-+S_1 & Pinion offset from center span & Fig. 14–10
-+S_F & Safety factor—bending & Eq.~(14–41) \\
-+S_H & Safety factor—pitting & Eq.~(14–42) \\
-+W^t or W_t^† & Transmitted load & Fig. 14–1
-+Y_N & Stress-cycle factor for bending strength & Fig. 14–14
-+Z_N & Stress-cycle factor for pitting resistance & Fig. 14–15
-+beta & Exponent & Eq.~(14–44) \\
-+sigma & Bending stress & Eq.~(14-2) \\
-+sigma_C & Contact stress from Hertzian relationships & Eq.~(14–14) \\
-+sigma_c & Contact stress from AGMA relationships & Eq.~(14–16) \\
-+sigma_all & Allowable bending stress & Eq.~(14–17) \\
-+sigma_(c & all) \\ & Allowable contact stress of AGMA & Eq.~(14–18) \\
-+sigma_H & Contact stress & Eq.~(14-11) \\
-+phi & Pressure angle & Eq.~(14–12) \\
-+phi_t & Transverse pressure angle & Eq.~(14–23) \\
-+psi & Helix angle at standard pitch diameter & Ex. 14–5
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{longtable}
+
+\title{Shigley14}
+\author{Brian Oporto}
+\date{September 2025}
+
+\begin{document}
+\begin{center}
+\begin{longtable}{| r | l | c |}
 \hline
-\end{tabular}
+Symbol & Name & Where found \\ \hline
+\hline \hline
+\endfirsthead
+
+\hline
+Symbol & Name & Where found \\ \hline
+\hline \hline
+\endhead
+
+\textit{b} & Net width of face of narrowest member & Eq.~(14-16) \\
+\hline
+\textit{$C_e$} & Mesh alignment correction factor & Eq.~(14-35) \\
+\hline
+\textit{$C_f$} & Surface condition factor & Eq.~(14-38) \\
+\hline
+\textit{$C_H$} & Hardness-ratio factor & Eq.~(14-18) \\ 
+\hline
+\textit{$C_{ma}$} & Mesh alignment factor & Eq.~(14-34) \\ 
+\hline
+\textit{$C_{mc}$} & Load-distribution factor & Eq.~(14-31) \\
+\hline
+\textit{$C_{mf}$} & Face load distribution factor & Eq.~(14-30) \\
+\hline
+\textit{$C_p$} & Elastic coefficient & Eq.~(14-13) \\
+\hline
+\textit{$C_{pf}$} & Pinion proportion factor & Eq.~(14–32) \\
+\hline
+\textit{$C_{pm}$} & Pinion proportion modifier & Eq.~(14–33) \\
+\hline
+\textit{$d$} & Operating pitch diameter of pinion & Ex.~(14–1) \\
+\hline
+\textit{$d_P$} & Pitch diameter of pinion & Eq.~(14–22) \\
+\hline
+\textit{$d_G$} & Pitch diameter of gear & Eq.~(14–22) \\
+\hline
+\textit{E} & Modulus of elasticity & Eq.~(14–10) \\
+\hline
+\textit{F} & Net face width of narrowest member & Eq.~(14–15) \\
+\hline
+\textit{$f_P$} & Pinion surface finish & Fig.~14–13 \\
+\hline
+\textit{H} & Power & Fig.~14–17 \\
+\hline
+\textit{$H_B$} & Brinell hardness & Ex.~14–3 \\
+\hline
+\textit{$H_{BG}$} & Brinell hardness of gear  & Sec.~14–12 \\
+\hline
+\textit{$H_{BP}$} & Brinell hardness of pinion & Sec.~14–12 \\
+\hline
+\textit{$h_p$} & Horsepower & Ex.~14–1 \\
+\hline
+\textit{$h_t$} & Gear-tooth whole depth & Sec.~14–16 \\
+\hline
+\textit{I} & Geometry factor for pitting resistance & Eq.~(14-16) \\
+\hline
+\textit{J} & Geometry factor for bending strength & Eq.~(14-15) \\
+\hline
+\textit{K} & Contact load factor for pitting resistance & Eq.~(6–65) \\
+\hline
+\textit{$K_B$} & Rim-thickness factor & Eq.~(14–40) \\
+\hline
+\textit{$K_f$} & Fatigue stress-concentration factor & Eq.~(14–9) \\
+\hline
+\textit{$K_m$} & Load-distribution factor & Eq.~(14–30) \\
+\hline
+\textit{$K_o$} & Overload factor & Eq.~(14–15) \\
+\hline
+\textit{$K_R$} & Reliability factor & Eq.~(14–17) \\
+\hline
+\textit{$K_s$} & Size factor & Sec.~14–10 \\
+\hline
+\textit{$K_T$} & Temperature factor & Eq.~(14–17) \\
+\hline
+\textit{$K_v$} & Dynamic factor & Eq.~(14–27) \\
+\hline
+\textit{m} & Metric module & Eq.~(14–15) \\
+\hline
+\textit{$m_B$} & Backup ratio & Eq.~(14–39) \\
+\hline
+\textit{$m_G$} & Gear ratio (never less than 1) & Eq.~(14–22) \\
+\hline
+\textit{$m_N$} & Load-sharing ratio & Eq.~(14–21) \\
+\hline
+\textit{N} & Number of stress cycles & Fig. 14–14 \\
+\hline
+\textit{$N_G$} & Number of teeth on gear & Eq.~(14-2) \\
+\hline
+\textit{$N_P$} & Number of teeth on pinion & Eq.~(14-22) \\
+\hline
+n & Speed & Ex. 14-1 \\
+\hline
+\textit{$n_p$} & Pinion Speed & Ex. 14-4 \\
+\hline
+\textit{P} & Diametral pitch & Eq.~(14-2) \\
+\hline
+\textit{$P_d$} & Diametral pitch of pinion & Eq.~(14-15) \\
+\hline
+\textit{$p_N$} & Normal base pitch & Eq.~(14-24) \\
+\hline
+\textit{$p_n$} & Normal circular pitch & Eq.~(14-24) \\
+\hline
+\textit{$p_x$} & Axial pitch & Eq.~(14–19) \\
+\hline
+\textit{$Q_v$} & Transmission accuracy level number & Eq.~(14–29) \\
+\hline
+\textit{R} & Reliability & Eq.~(14–38) \\
+\hline
+\textit{$R_a$} & Root-mean-squared roughness & Fig. 14–13 \\
+\hline
+\textit{$r_f$} & Tooth fillet radius & Fig. 14–1 \\
+\hline
+\textit{$r_G$} & Pitch-circle radius on gear & In standard \\
+\hline
+\textit{$r_P$} & Pitch-circle radius on pinion & In standard \\
+\hline
+\textit{$r_{bP}$} & Pinion base-circle radius & Eq.~(14–25) \\
+\hline
+\textit{$r_{bG}$} & Gear base-circle radius & Eq.~(14–25) \\
+\hline
+\textit{$S_C$} & Buckingham surface endurance strength & Ex. 14–3 \\
+\hline
+\textit{$S_c$} & AGMA surface endurance strength & Eq.~(14–18) \\
+\hline
+\textit{$S_t$} & AGMA bending strength & Eq.~(14–17) \\
+\hline
+\textit{S} & Bearing span & Fig.~14–10 \\
+\hline
+\textit{$S_1$} & Pinion offset from center span & Fig.~14–10 \\
+\hline
+\textit{$S_F$} & Safety factor—bending & Eq.~(14–41) \\
+\hline
+\textit{$S_H$} & Safety factor—pitting & Eq.~(14–42) \\
+\hline
+$W^t$~or~\textit{$W_t^{T}$} & Transmitted load & Fig.~14–1 \\
+\hline
+\textit{$Y_N$} & Stress-cycle factor for bending strength & Fig.~14–14 \\
+\hline
+\textit{$Z_N$} & Stress-cycle factor for pitting resistance & Fig.~14–15 \\
+\hline
+\textit{$\beta$} & Exponent & Eq.~(14–44) \\
+\hline
+\textit{$\sigma$} & Bending stress & Eq.~(14-2) \\
+\hline
+\textit{$\sigma_C$} & Contact stress from Hertzian relationships & Eq.~(14–14) \\
+\hline
+\textit{$\sigma_c$} & Contact stress from AGMA relationships & Eq.~(14–16) \\
+\hline
+\textit{$\sigma_{all}$} & Allowable bending stress & Eq.~(14–17) \\
+\hline
+\textit{$\sigma_{1(c, all)}$} & Allowable contact stress of AGMA & Eq.~(14–18) \\
+\hline
+\textit{$\sigma_H$} & Contact stress & Eq.~(14-11) \\
+\hline
+\textit{$\phi$} & Pressure angle & Eq.~(14–12) \\
+\hline
+\textit{$\phi_t$} & Transverse pressure angle & Eq.~(14–23) \\
+\hline
+\textit{$\psi$} & Helix angle at standard pitch diameter & Ex.~14–5 \\
+\hline
+\end{longtable}
+\end{center}
+\end{document}
