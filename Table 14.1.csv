@@ -1,0 +1,48 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/table_14_1.csv
+index 0000000000000000000000000000000000000000..af86b161c2ae596cd5e4b4bbd1602f3fb5e9d794 100644
+--- a//dev/null
++++ b/table_14_1.csv
+@@ -0,0 +1,39 @@
++Symbol,Name,Where found
++b,Net width of face of narrowest member,Eq. (14-16)
++C_m,Mesh alignment correction factor,Eq. (14-35)
++C_s,Surface condition factor,Eq. (14-38)
++C_v,Hardness-ratio factor,Eq. (14-18)
++C_f,Geometry factor for pitting resistance,Eq. (14-22)
++C_H,Plastic coefficient,Eq. (14-27)
++C_c,Chordal addendum,Eq. (14-33)
++C_u,Chordal tooth thickness,Eq. (14-33)
++d_{fP},Addendum circle diameter of pinion,Eq. (14-21)
++d_{fG},Addendum circle diameter of gear,Eq. (14-21)
++d_P,Pitch diameter of pinion,Eq. (14-21)
++d_G,Pitch diameter of gear,Eq. (14-21)
++d_{bP},Base circle diameter of pinion,Eq. (14-21)
++d_{bG},Base circle diameter of gear,Eq. (14-21)
++d_{rP},Root circle diameter of pinion,Eq. (14-21)
++d_{rG},Root circle diameter of gear,Eq. (14-21)
++p,Circular pitch,Eq. (14-15)
++F_t,Tangential load on pinion,Eq. (14-4)
++F_r,Radial load on pinion,Eq. (14-6)
++F_a,Axial load on pinion,Eq. (14-6)
++F,Face width,Eq. (14-16)
++H_B,Brinell hardness,Eq. (14-23)
++H_R,Rockwell C hardness,Eq. (14-23)
++I,Geometry factor for pitting resistance,Eq. (14-22)
++J,Geometry factor for bending strength,Eq. (14-17)
++K_o,Overload factor,Eq. (14-12)
++K_a,Application factor,Eq. (14-12)
++K_s,Size factor,Eq. (14-38)
++K_m,Load-distribution factor,Eq. (14-35)
++K_v,Dynamic factor,Eq. (14-34)
++K_B,Rim-thickness factor,Eq. (14-32)
++K_f,Fatigue stress concentration factor,Eq. (14-33)
++K_i,Idler factor,Eq. (14-19)
++K_r,Reliability factor,Eq. (14-31)
++m_G,Gear ratio (always less than 1),Eq. (14-1)
++N_G,Number of teeth on gear,Eq. (14-1)
++N_P,Number of teeth on pinion,Eq. (14-1)
++n,Speed,Eq. (14-1)
+ 
+EOF
+)
